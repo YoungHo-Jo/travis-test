@@ -1,0 +1,14 @@
+language: java
+jdk:
+  - openjdk8
+
+brancehs:
+  only:
+    - master
+
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.gradle'
+
+script: "./gradlew clean build"
