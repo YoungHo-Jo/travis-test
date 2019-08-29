@@ -9,9 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class MainController {
 
   @GetMapping("/")
-  public ResponseEntity<String> hello() {
-    return ResponseEntity.ok(
-            "hello"
-    );
+  public String hello() {
+    return "hello";
+  }
+  
+  @GetMapping("/hello")
+  public String hi() {
+    return "hi";
   }
 }
